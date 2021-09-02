@@ -1,0 +1,38 @@
+/* :: Header Area CSS */
+@import './src/styles';
+
+.header-area {
+    position: fixed;
+    z-index: 995;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    @include trans-duration(500ms);
+    background-color: transparent;
+    padding: 15px 30px;
+
+    .menu-content-area {
+        .header-social-area {
+            margin-right: 30px;
+            a {
+                font-size: 18px;
+                padding: 0 10px;
+                color: $color-white;
+                @media #{$breakpoint-xs} {
+                    padding: 0 5px;
+                    font-size: 14px;
+                }
+            }
+            @media #{$breakpoint-xs} {
+                margin-right: 15px;
+            }
+        }
+    }
+    &.sticky {
+        background-color: $bg-default;
+    }
+    @media #{$breakpoint-xs} {
+        padding: 10px 0;
+    }
+}
