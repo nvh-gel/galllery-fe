@@ -1,0 +1,13 @@
+@import './src/assets/scss/theme_color';
+@import './src/assets/scss/responsive';
+
+
+.menu-content-area {
+  .header-social-area {
+    margin-right: 30px;
+
+    @media #{$breakpoint-xs} {
+      margin-right: 15px;
+    }
+  }
+}

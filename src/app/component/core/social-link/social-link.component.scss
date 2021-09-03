@@ -1,0 +1,13 @@
+@import './src/assets/scss/theme_color';
+@import './src/assets/scss/responsive';
+
+
+a {
+  font-size: 18px;
+  padding: 0 10px;
+  color: $color-white;
+  @media #{$breakpoint-xs} {
+    padding: 0 5px;
+    font-size: 14px;
+  }
+}

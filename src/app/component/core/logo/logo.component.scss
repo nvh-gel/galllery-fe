@@ -1,0 +1,13 @@
+@import './src/assets/scss/theme_color';
+@import './src/assets/scss/responsive';
+
+.logo-area {
+  a {
+    color: $color-white;
+    font-size: 36px;
+    font-weight: 100;
+    @media #{$breakpoint-xs} {
+      font-size: 24px;
+    }
+  }
+}

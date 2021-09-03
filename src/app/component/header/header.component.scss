@@ -1,0 +1,29 @@
+/* :: Header Area CSS */
+@import './src/assets/scss/theme_color';
+@import './src/assets/scss/responsive';
+@import './src/assets/scss/mixin';
+
+
+.header-area {
+    position: fixed;
+    z-index: 995;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    @include trans-duration(500ms);
+    background-color: transparent;
+    padding: 15px 30px;
+
+    &.sticky {
+        background-color: $bg-default;
+    }
+    @media #{$breakpoint-xs} {
+        padding: 10px 0;
+    }
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    cursor: pointer;
+}
