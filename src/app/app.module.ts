@@ -11,6 +11,7 @@ import {MainMenuComponent} from './component/section/main-menu/main-menu.compone
 import {FooterComponent} from './component/section/footer/footer.component';
 import {PreloadComponent} from './component/core/preload/preload.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { GridComponent } from './component/section/grid/grid.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     MainMenuComponent,
     FooterComponent,
     PreloadComponent,
+    GridComponent,
   ],
   imports: [
     BrowserModule,

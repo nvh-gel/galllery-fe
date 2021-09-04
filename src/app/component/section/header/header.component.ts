@@ -1,4 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
+import {ScrollService} from "../../../service/scroll/scroll.service";
+import {Subscription} from "rxjs";
 
 
 @Component({
@@ -8,10 +10,19 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() {
+  sticky!: string;
+  subscription!: Subscription;
+
+  constructor(private scrollService: ScrollService) {
   }
 
   ngOnInit(): void {
+    this.subscription = this.scrollService.currentScroll.subscribe(state => this.sticky = state);
   }
 
+  @HostListener('window:scroll', ["$event"])
+  updateSticky() {
+    let stickyState = window.pageYOffset > 0 ? 'sticky' : '';
+    this.scrollService.updateScrollState(stickyState);
+  }
 }
