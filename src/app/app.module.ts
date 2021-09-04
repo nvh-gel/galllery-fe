@@ -9,6 +9,7 @@ import { MenuContentComponent } from './component/section/menu-content/menu-cont
 import { SocialLinkComponent } from './component/core/social-link/social-link.component';
 import { MenuButtonComponent } from './component/core/menu-button/menu-button.component';
 import { MainMenuComponent } from './component/section/main-menu/main-menu.component';
+import { FooterComponent } from './component/section/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MainMenuComponent } from './component/section/main-menu/main-menu.compo
     MenuContentComponent,
     SocialLinkComponent,
     MenuButtonComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

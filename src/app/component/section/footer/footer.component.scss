@@ -1,0 +1,28 @@
+/* Footer CSS */
+@import './src/assets/scss/theme_color';
+
+
+.footer-area {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  .copyright-text {
+    padding: 30px;
+    text-align: center;
+    p {
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+    a{
+      color: $text-color;
+      font-size: 15px;
+      font-weight: 300;
+      &:hover,
+      &:focus {
+        font-size: 15px;
+      }
+      text-decoration: none;
+    }
+  }
+}
