@@ -5,20 +5,21 @@
 
 
 .header-area {
-    position: fixed;
-    z-index: 995;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    @include trans-duration(500ms);
-    background-color: transparent;
-    padding: 15px 30px;
+  position: fixed;
+  z-index: 995;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  @include trans-duration(500ms);
+  background-color: transparent;
+  padding: 15px 30px;
 
-    &.sticky {
-        background-color: $bg-default;
-    }
-    @media #{$breakpoint-xs} {
-        padding: 10px 0;
-    }
+  &.sticky {
+    background-color: $bg-default;
+  }
+
+  @media #{$breakpoint-xs} {
+    padding: 10px 0;
+  }
 }
