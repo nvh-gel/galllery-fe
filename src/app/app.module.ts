@@ -13,6 +13,7 @@ import {PreloadComponent} from './component/core/preload/preload.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {GridComponent} from './component/section/grid/grid.component';
 import {ScrollComponent} from './component/core/scroll/scroll.component';
+import { HeroComponent } from './component/section/hero/hero.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import {ScrollComponent} from './component/core/scroll/scroll.component';
     PreloadComponent,
     GridComponent,
     ScrollComponent,
+    HeroComponent,
   ],
   imports: [
     BrowserModule,
