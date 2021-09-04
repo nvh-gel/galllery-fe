@@ -1,0 +1,44 @@
+/* CSS for scroll */
+@import "src/assets/scss/theme_color";
+@import "src/assets/scss/mixin";
+@import "src/assets/scss/responsive";
+
+
+#scrollUp {
+  position: fixed;
+  background-color: $bg-default;
+  border-radius: 50%;
+  bottom: 60px;
+  right: 60px;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  line-height: 66px;
+  text-align: center;
+  color: $color-white;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  z-index: 998;
+  @include trans-duration(5000ms);
+  //display: none;
+
+  &:hover {
+    background-color: $hover-color;
+    cursor: pointer;
+  }
+
+  @media #{$breakpoint-md} {
+    bottom: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    line-height: 46px;
+  }
+
+  @media #{$breakpoint-xs} {
+    bottom: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    line-height: 46px;
+  }
+}

@@ -11,7 +11,8 @@ import {MainMenuComponent} from './component/section/main-menu/main-menu.compone
 import {FooterComponent} from './component/section/footer/footer.component';
 import {PreloadComponent} from './component/core/preload/preload.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { GridComponent } from './component/section/grid/grid.component';
+import {GridComponent} from './component/section/grid/grid.component';
+import {ScrollComponent} from './component/core/scroll/scroll.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { GridComponent } from './component/section/grid/grid.component';
     FooterComponent,
     PreloadComponent,
     GridComponent,
+    ScrollComponent,
   ],
   imports: [
     BrowserModule,
