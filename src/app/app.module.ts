@@ -1,15 +1,17 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {HeaderComponent} from './component/section/header/header.component';
+import {LogoComponent} from './component/core/logo/logo.component';
+import {MenuContentComponent} from './component/section/menu-content/menu-content.component';
+import {SocialLinkComponent} from './component/core/social-link/social-link.component';
+import {MenuButtonComponent} from './component/core/menu-button/menu-button.component';
+import {MainMenuComponent} from './component/section/main-menu/main-menu.component';
+import {FooterComponent} from './component/section/footer/footer.component';
+import {PreloadComponent} from './component/core/preload/preload.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './component/section/header/header.component';
-import { LogoComponent } from './component/core/logo/logo.component';
-import { MenuContentComponent } from './component/section/menu-content/menu-content.component';
-import { SocialLinkComponent } from './component/core/social-link/social-link.component';
-import { MenuButtonComponent } from './component/core/menu-button/menu-button.component';
-import { MainMenuComponent } from './component/section/main-menu/main-menu.component';
-import { FooterComponent } from './component/section/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,16 @@ import { FooterComponent } from './component/section/footer/footer.component';
     SocialLinkComponent,
     MenuButtonComponent,
     MainMenuComponent,
-    FooterComponent
+    FooterComponent,
+    PreloadComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
