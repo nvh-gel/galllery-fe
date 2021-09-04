@@ -1,14 +1,14 @@
 import {Component, OnInit} from '@angular/core';
-import {MenuService} from "../../../service/menu/menu.service";
 import {Subscription} from "rxjs";
+import {MenuService} from "../../../service/menu/menu.service";
 
 
 @Component({
-  selector: 'app-menu-button',
-  templateUrl: './menu-button.component.html',
-  styleUrls: ['./menu-button.component.scss']
+  selector: 'app-main-menu',
+  templateUrl: './main-menu.component.html',
+  styleUrls: ['./main-menu.component.scss']
 })
-export class MenuButtonComponent implements OnInit {
+export class MainMenuComponent implements OnInit {
 
   state!: string;
   subscription!: Subscription;
@@ -24,7 +24,7 @@ export class MenuButtonComponent implements OnInit {
     this.subscription.unsubscribe();
   }
 
-  openMenu() {
-    this.menu.changeState('menu-open');
+  closeMenu() {
+    this.menu.changeState('');
   }
 }

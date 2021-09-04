@@ -1,7 +1,7 @@
-@import './src/assets/scss/mixin';
-@import './src/assets/scss/theme_color';
-@import './src/assets/scss/responsive';
-@import './src/assets/css/themify-icons';
+@import '../../../../assets/scss/mixin';
+@import '../../../../assets/scss/theme_color';
+@import '../../../../assets/scss/responsive';
+@import '../../../../assets/css/themify-icons.css';
 
 
 .mainMenu {
@@ -22,7 +22,7 @@
     position: absolute;
     z-index: 9;
     right: 50px;
-    top: 50px;
+    top: 30px;
     color: $color-white;
     font-size: 20px;
     cursor: pointer;

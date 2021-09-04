@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {SocialLink} from "../../../interface/social-link";
-import {SOCIALS} from "../../../utils/constatns";
+import {SOCIALS} from "../../../util/constatns";
+
 
 @Component({
   selector: 'app-social-link',
