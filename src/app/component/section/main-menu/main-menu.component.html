@@ -1,7 +1,7 @@
 <!--Main menu-->
-<div class="mainMenu d-flex align-items-center justify-content-between {{menuOpen}}">
+<div class="mainMenu d-flex align-items-center justify-content-between {{state}}">
   <!--  Close button-->
-  <div class="closeIcon">
+  <div class="closeIcon" (click)="closeMenu()">
     <i class="ti-close" aria-hidden="true"></i>
   </div>
   <!--  Logo-->

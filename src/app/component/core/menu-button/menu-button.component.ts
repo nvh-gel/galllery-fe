@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {MenuService} from "../../../service/menu/menu.service";
+import {Subscription} from "rxjs";
+
 
 @Component({
   selector: 'app-menu-button',
@@ -7,11 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuButtonComponent implements OnInit {
 
-  constructor() { }
+  state!: string;
+  subscription!: Subscription;
+
+  constructor(private menu: MenuService) {
+  }
 
   ngOnInit(): void {
+    this.subscription = this.menu.currentState.subscribe(state => this.state = state);
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 
   openMenu() {
+    this.menu.changeState('menu-open');
   }
 }
