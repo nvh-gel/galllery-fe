@@ -49,3 +49,23 @@
     @include animation(sonar 1800ms linear infinite);
   }
 }
+
+@-webkit-keyframes sonar {
+  0% {
+    @include transform(rotate(0deg));
+
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}
+
+@keyframes sonar {
+  0% {
+    @include transform(rotate(0deg));
+
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}
