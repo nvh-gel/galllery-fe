@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Article} from "../../interface/article";
+import {ShowCaseData} from "../../interface/show-case-data";
 
 
 @Injectable({
@@ -85,7 +86,11 @@ export class ArticleService {
         caption: '12.  I haven\'t read both his novels, but judging from the one I have read, he seems to be a promising writer.',
         image: 'https://i2.wp.com/www.researchstash.com/wp-content/uploads/2018/07/Distribution-of-Monsoon-Rainfall-Connected-To-Global-Sea-Surface-Temperatures.jpg'
       },
-    ]
-      ;
+    ];
+  }
+
+  getArticleForShowCase(): ShowCaseData[] {
+
+    return [];
   }
 }
