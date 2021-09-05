@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {QuoteService} from "../../../service/quote/quote.service";
 
 
 @Component({
@@ -8,10 +9,12 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ShowCaseQuoteComponent implements OnInit {
 
-  constructor() {
+  quote!: string;
+
+  constructor(private quoteService: QuoteService) {
   }
 
   ngOnInit(): void {
+    this.quote = this.quoteService.getDailyQuote();
   }
-
 }
