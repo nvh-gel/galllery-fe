@@ -16,6 +16,7 @@ import {ScrollComponent} from './component/core/scroll/scroll.component';
 import {HeroComponent} from './component/section/hero/hero.component';
 import {HeroSlideComponent} from './component/core/hero-slide/hero-slide.component';
 import {CarouselModule} from "ngx-owl-carousel-o";
+import { ShowCaseComponent } from './component/section/show-case/show-case.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import {CarouselModule} from "ngx-owl-carousel-o";
     ScrollComponent,
     HeroComponent,
     HeroSlideComponent,
+    ShowCaseComponent,
   ],
   imports: [
     BrowserModule,
