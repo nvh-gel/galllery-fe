@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', ["$event"])
   updateSticky() {
-    let stickyState = window.pageYOffset > 0 ? 'sticky' : '';
+    let stickyState = window.pageYOffset > 50 ? 'sticky' : '';
     this.scrollService.updateScrollState(stickyState);
   }
 }

@@ -1,0 +1,61 @@
+/* CSS for hero slides */
+@import "src/assets/scss/mixin";
+@import "src/assets/scss/theme_color";
+@import "src/assets/scss/responsive";
+
+
+.single-hero-slide {
+  height: 800px;
+  position: relative;
+  z-index: 1;
+  padding: 0 40px 100px;
+  @include trans-duration(800ms);
+  overflow: visible;
+  cursor: pointer;
+
+  .hero-slides-content {
+    position: relative;
+    z-index: 1;
+    @include transform(translateY(75%));
+    @include trans-duration(800ms);
+    bottom: 0;
+
+    .line {
+      width: 100px;
+      height: 1px;
+      background-color: $color-white;
+      margin-bottom: 30px;
+      display: block;
+    }
+
+    h2 {
+      color: $color-white;
+      font-weight: 100;
+    }
+
+    p {
+      color: $color-white;
+      margin-bottom: 0;
+      @include trans-duration(500ms);
+      margin-top: 140px;
+    }
+  }
+
+  &:hover .hero-slides-content {
+    @include transform(translateY(0%));
+  }
+
+  &:hover .container p {
+    margin-top: 40px;
+  }
+
+  @media #{$breakpoint-lg} {
+    height: 700px;
+  }
+  @media #{$breakpoint-md} {
+    height: 600px;
+  }
+  @media #{$breakpoint-xs} {
+    height: 500px;
+  }
+}

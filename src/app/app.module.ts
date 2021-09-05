@@ -13,7 +13,9 @@ import {PreloadComponent} from './component/core/preload/preload.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {GridComponent} from './component/section/grid/grid.component';
 import {ScrollComponent} from './component/core/scroll/scroll.component';
-import { HeroComponent } from './component/section/hero/hero.component';
+import {HeroComponent} from './component/section/hero/hero.component';
+import {HeroSlideComponent} from './component/core/hero-slide/hero-slide.component';
+import {CarouselModule} from "ngx-owl-carousel-o";
 
 
 @NgModule({
@@ -30,10 +32,12 @@ import { HeroComponent } from './component/section/hero/hero.component';
     GridComponent,
     ScrollComponent,
     HeroComponent,
+    HeroSlideComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    CarouselModule,
     AppRoutingModule,
   ],
   providers: [],

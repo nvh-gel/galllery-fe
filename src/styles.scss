@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import './src/assets/css/bootstrap.min';
 @import './src/assets/css/font-awesome.min';
+@import "assets/scss/theme_color";
 //@import './src/assets/scss/mixin';
 //@import './src/assets/css/animate';
 //@import './src/assets/css/owl.carousel';
@@ -20,4 +21,30 @@ $font-family: 'Roboto', sans-serif;
 
 body {
   font-family: $font-family;
+
+  .owl-theme {
+    .owl-dots {
+      position: absolute;
+      left: 50px;
+      bottom: 50px;
+
+      .owl-dot {
+        width: 10px;
+        height: 10px;
+        border: 2px solid #6a6a67;
+        margin: 0 5px;
+        border-radius: 50%;
+        display: inline-block;
+
+        span {
+          display: none;
+        }
+
+        &.active {
+          border: 1px solid $color-white;
+          background-color: $color-white;
+        }
+      }
+    }
+  }
 }
