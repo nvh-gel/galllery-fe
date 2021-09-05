@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-show-case',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowCaseComponent implements OnInit {
 
-  constructor() { }
+  rows!: [];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

@@ -16,7 +16,10 @@ import {ScrollComponent} from './component/core/scroll/scroll.component';
 import {HeroComponent} from './component/section/hero/hero.component';
 import {HeroSlideComponent} from './component/core/hero-slide/hero-slide.component';
 import {CarouselModule} from "ngx-owl-carousel-o";
-import { ShowCaseComponent } from './component/section/show-case/show-case.component';
+import {ShowCaseComponent} from './component/section/show-case/show-case.component';
+import {ShowCaseQuoteComponent} from './component/section/show-case-quote/show-case-quote.component';
+import {ShowCaseContentComponent} from './component/section/show-case-content/show-case-content.component';
+import {ShowCaseArticleComponent} from './component/core/show-case-article/show-case-article.component';
 
 
 @NgModule({
@@ -35,6 +38,9 @@ import { ShowCaseComponent } from './component/section/show-case/show-case.compo
     HeroComponent,
     HeroSlideComponent,
     ShowCaseComponent,
+    ShowCaseQuoteComponent,
+    ShowCaseContentComponent,
+    ShowCaseArticleComponent,
   ],
   imports: [
     BrowserModule,
