@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {ShowCaseData} from "../../../interface/show-case-data";
 
 
 @Component({
@@ -8,12 +9,11 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ShowCaseContentComponent implements OnInit {
 
-  @Input() rowData: any;
+  @Input() rowData!: ShowCaseData;
 
   constructor() {
   }
 
   ngOnInit(): void {
   }
-
 }

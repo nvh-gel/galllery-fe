@@ -1,0 +1,88 @@
+/* CSS for show case article */
+@import "src/assets/scss/responsive";
+
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-230 {
+  margin-top: 230px;
+}
+
+.show-case-article {
+  position: relative;
+  z-index: 1;
+
+  .backend-content {
+    .dots {
+      position: absolute;
+      z-index: -1;
+      top: -100px;
+      left: -150px;
+    }
+
+    h2 {
+      position: absolute;
+      font-size: 230px;
+      color: #f0f0f0;
+      z-index: -10;
+      top: -170px;
+      right: 35%;
+
+      @media #{$breakpoint-lg} {
+        font-size: 170px;
+        top: -120px;
+      }
+
+      @media #{$breakpoint-md} {
+        font-size: 80px;
+        top: -50px;
+      }
+
+      @media #{$breakpoint-xs} {
+        font-size: 80px;
+        top: -50px;
+      }
+    }
+  }
+
+  .show-case-meta {
+    padding-top: 30px;
+
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 30px;
+      @media #{$breakpoint-xs} {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &.show-case-article-1 {
+    .backend-content {
+      .dots {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: auto;
+        right: -150px;
+      }
+    }
+
+    .show-case-meta {
+      p {
+        text-align: right;
+      }
+
+      h2 {
+        text-align: right;
+      }
+    }
+  }
+}

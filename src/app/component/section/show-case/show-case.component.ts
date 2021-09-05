@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {ArticleService} from "../../../service/article/article.service";
+import {ShowCaseData} from "../../../interface/show-case-data";
 
 
 @Component({
@@ -8,12 +10,12 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ShowCaseComponent implements OnInit {
 
-  rows!: [];
+  rows!: ShowCaseData[];
 
-  constructor() {
+  constructor(private articleService: ArticleService) {
   }
 
   ngOnInit(): void {
+    this.rows = this.articleService.getArticleForShowCase();
   }
-
 }

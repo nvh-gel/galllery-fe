@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Article} from "../../../interface/article";
 
 
 @Component({
@@ -8,10 +9,14 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ShowCaseArticleComponent implements OnInit {
 
+  @Input() article!: Article;
+  @Input() id!: number | undefined;
+  margin!: string;
+
   constructor() {
   }
 
   ngOnInit(): void {
+    this.margin = 'mt-' + this.article.styles?.marginTop;
   }
-
 }

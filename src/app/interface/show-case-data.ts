@@ -1,5 +1,9 @@
+import {Article} from "./article";
+
+
 export interface ShowCaseData {
 
-  content: [],
+  row: number,
+  content: Article[],
   style: string,
 }

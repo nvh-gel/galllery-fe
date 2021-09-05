@@ -3,12 +3,10 @@
 @import './src/assets/css/bootstrap.min';
 @import './src/assets/css/font-awesome.min';
 @import "assets/scss/theme_color";
-//@import './src/assets/scss/mixin';
-//@import './src/assets/css/animate';
-//@import './src/assets/css/owl.carousel';
-//@import './src/assets/css/magnific-popup';
-//@import './src/assets/css/font-awesome.min';
-//@import './src/assets/css/themify-icons';
+@import './src/assets/css/animate';
+@import './src/assets/css/magnific-popup';
+@import './src/assets/css/font-awesome.min';
+@import './src/assets/css/themify-icons';
 
 
 $font-family: 'Roboto', sans-serif;
@@ -17,6 +15,17 @@ $font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+p {
+  color: $text-color;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 100;
 }
 
 body {
