@@ -1,6 +1,7 @@
 <div class="row {{rowData.style}}">
   <app-show-case-article *ngFor="let article of rowData.content"
                          [article]="article"
-                         [id]="article.id">
+                         [id]="article.id"
+                         [total]="rowData.content.length">
   </app-show-case-article>
 </div>

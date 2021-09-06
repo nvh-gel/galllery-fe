@@ -1,6 +1,18 @@
 /* CSS for show case article */
 @import "src/assets/scss/responsive";
+@import "src/assets/scss/mixin";
 
+.mt--250 {
+  margin-top: -250px;
+}
+
+.mt--220 {
+  margin-top: -220px;
+}
+
+.mt--500 {
+  margin-top: -500px;
+}
 
 .mt-100 {
   margin-top: 100px;
@@ -10,9 +22,37 @@
   margin-top: 230px;
 }
 
+.max-width-360 {
+  img {
+    max-width: 360px;
+  }
+}
+
+.max-width-480 {
+  img {
+    max-width: 480px;
+  }
+}
+
+.max-width-640 {
+  img {
+    max-width: 640px;
+  }
+}
+
+.max-width-1080 {
+  img {
+    max-width: 1080px;
+  }
+}
+
 .show-case-article {
   position: relative;
   z-index: 1;
+
+  img {
+    position: relative;
+  }
 
   .backend-content {
     .dots {
@@ -64,7 +104,41 @@
     }
   }
 
-  &.show-case-article-1 {
+  &.show-case-article-0-1 {
+
+    .backend-content {
+      .dots {
+        top: 0;
+        left: -200px;
+        right: auto;
+        @include transform(rotate(90deg));
+      }
+
+      h2 {
+        top: -180px;
+        left: 30%;
+        right: auto;
+
+        @media #{$breakpoint-lg} {
+          top: -130px;
+        }
+        @media #{$breakpoint-md} {
+          top: -90px;
+          font-size: 100px;
+        }
+        @media #{$breakpoint-xs} {
+          top: -70px;
+        }
+      }
+    }
+
+    @media #{$breakpoint-xs} {
+      margin-bottom: 100px;
+    }
+  }
+
+  &.show-case-article-1-2 {
+
     .backend-content {
       .dots {
         position: absolute;

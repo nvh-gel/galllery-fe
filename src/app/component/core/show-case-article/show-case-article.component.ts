@@ -12,11 +12,14 @@ export class ShowCaseArticleComponent implements OnInit {
   @Input() article!: Article;
   @Input() id!: number | undefined;
   margin!: string;
+  @Input() total!: number;
+  maxWidth!: string;
 
   constructor() {
   }
 
   ngOnInit(): void {
-    this.margin = 'mt-' + this.article.styles?.marginTop;
+    this.margin = `mt-${this.article.styles?.marginTop}`;
+    this.maxWidth = `max-width-${this.article.styles?.maxWidth}`;
   }
 }

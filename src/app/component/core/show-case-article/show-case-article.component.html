@@ -1,7 +1,7 @@
-<div class="show-case-article {{margin}} show-case-article-{{id}} fadeIn">
+<div class="show-case-article {{margin}} {{maxWidth}} show-case-article-{{id}}-{{total}} fadeIn">
   <div class="backend-content">
-    <img class="dots" src="assets/images/dots.png" alt="">
-    <h2 *ngIf="article.backgroundText">{{article.backgroundText}}</h2>
+    <img class="dots" src="assets/images/dots.png" alt="" *ngIf="article.backEnd?.dots">
+    <h2 *ngIf="article.backEnd?.text">{{article.backEnd?.text}}</h2>
   </div>
   <div class="show-case-image">
     <img src="{{article.image}}" alt="">

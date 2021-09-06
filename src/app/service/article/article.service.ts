@@ -99,21 +99,97 @@ export class ArticleService {
             id: 0,
             articleId: 151,
             title: 'Italy in the sunset',
-            image: 'assets/images/p1.png',
-            createdAt: new Date(),
-            backgroundText: 'Reality',
-            styles: {marginTop: 100},
+            image: 'https://i.pinimg.com/736x/f2/d2/50/f2d25021a59529e1abe165a111f1430f--italy-trip-italy-travel.jpg',
+            createdAt: new Date("2018-02-02"),
+            backEnd: {text: 'Quality', dots: true},
+            styles: {marginTop: 100, maxWidth: 480},
           },
           {
             id: 1,
             articleId: 555,
             title: 'Mountain Landscape',
-            image: 'assets/images/p2.png',
-            createdAt: new Date(),
-            styles: {marginTop: 230},
+            image: 'https://www.zastavki.com/pictures/originals/2013/Nature___Mountains___Mountain_landscape_with_a_road_042857_.jpg',
+            createdAt: new Date("2018-02-02"),
+            backEnd: {dots: true},
+            styles: {marginTop: 230, maxWidth: 480},
           },
         ],
         style: 'justify-content-between',
+      },
+      {
+        row: 1,
+        content: [
+          {
+            id: 0,
+            articleId: 933,
+            title: 'Foggy lake',
+            image: 'https://images.hdqwalls.com/wallpapers/fog-over-lake-5k-fn.jpg',
+            createdAt: new Date("2020-11-02"),
+            backEnd: {text: 'Innovation', dots: true},
+            styles: {marginTop: 100, maxWidth: 1080},
+          },
+        ],
+        style: '',
+      },
+      {
+        row: 2,
+        content: [
+          {
+            id: 0,
+            articleId: 163,
+            title: 'Clouds in the sky',
+            image: 'https://strangesounds.org/wp-content/uploads/2017/02/mammatus-clouds.jpg',
+            createdAt: new Date("2020-12-01"),
+            backEnd: {dots: true},
+            styles: {marginTop: -220, maxWidth: 640}
+          },
+        ],
+        style: 'justify-content-end',
+      },
+      {
+        row: 3,
+        content: [
+          {
+            id: 0,
+            articleId: 321,
+            title: 'Over the canyon',
+            image: 'https://ssl.c.photoshelter.com/img-get/I000044ofjmiWhTQ/s/1200/I000044ofjmiWhTQ.jpg',
+            createdAt: new Date("2021-01-12"),
+            backEnd: {text: 'Passion', dots: true},
+            styles: {marginTop: -250, maxWidth: 360},
+          },
+        ],
+        style: '',
+      },
+      {
+        row: 4,
+        content: [
+          {
+            id: 0,
+            articleId: 343,
+            title: 'Mirror lake',
+            image: 'https://c8.alamy.com/comp/CWW666/alberta-canada-mirror-lake-in-banff-national-park-CWW666.jpg',
+            createdAt: new Date("2021-02-14"),
+            backEnd: {dots: false},
+            styles: {marginTop: -250, maxWidth: 360},
+          }
+        ],
+        style: 'justify-content-center',
+      },
+      {
+        row: 5,
+        content: [
+          {
+            id: 0,
+            articleId: 352,
+            title: 'Post office',
+            image: 'https://media.istockphoto.com/photos/outside-general-post-office-sydney-martin-place-picture-id1162272879',
+            createdAt: new Date("2021-03-25"),
+            backEnd: {dots: true, text: 'Future'},
+            styles: {marginTop: -500, maxWidth: 360},
+          }
+        ],
+        style: 'justify-content-end',
       },
     ];
   }
