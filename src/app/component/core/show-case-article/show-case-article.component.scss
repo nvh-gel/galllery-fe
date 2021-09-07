@@ -2,25 +2,6 @@
 @import "src/assets/scss/responsive";
 @import "src/assets/scss/mixin";
 
-.mt--250 {
-  margin-top: -250px;
-}
-
-.mt--220 {
-  margin-top: -220px;
-}
-
-.mt--500 {
-  margin-top: -500px;
-}
-
-.mt-100 {
-  margin-top: 100px;
-}
-
-.mt-230 {
-  margin-top: 230px;
-}
 
 .max-width-360 {
   img {
@@ -58,8 +39,17 @@
     .dots {
       position: absolute;
       z-index: -1;
+    }
+
+    .dots-left {
       top: -100px;
       left: -150px;
+    }
+
+    .dots-right {
+      top: 0;
+      left: auto;
+      right: -150px;
     }
 
     h2 {
@@ -68,7 +58,6 @@
       color: #f0f0f0;
       z-index: -10;
       top: -170px;
-      right: 35%;
 
       @media #{$breakpoint-lg} {
         font-size: 170px;
@@ -105,19 +94,19 @@
   }
 
   &.show-case-article-0-1 {
-
     .backend-content {
       .dots {
-        top: 0;
         left: -200px;
-        right: auto;
         @include transform(rotate(90deg));
+      }
+
+      .dots-right {
+        left: auto;
+        right: -200px;
       }
 
       h2 {
         top: -180px;
-        left: 30%;
-        right: auto;
 
         @media #{$breakpoint-lg} {
           top: -130px;
@@ -138,24 +127,19 @@
   }
 
   &.show-case-article-1-2 {
-
-    .backend-content {
-      .dots {
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: auto;
-        right: -150px;
-      }
-    }
-
     .show-case-meta {
       p {
         text-align: right;
+        @media #{$breakpoint-xs} {
+          text-align: left;
+        }
       }
 
       h2 {
         text-align: right;
+        @media #{$breakpoint-xs} {
+          text-align: left;
+        }
       }
     }
   }

@@ -6,16 +6,12 @@ export interface Article {
   caption?: string;
   image: string;
   createdAt?: Date;
-  backEnd?: BackEnd;
-  styles?: Style;
+  decorator?: decorator;
 }
 
-interface Style {
+interface decorator {
   marginTop?: number;
   maxWidth?: number;
-}
-
-interface BackEnd {
   dots?: boolean;
   dotsAlign?: string;
   text?: string;

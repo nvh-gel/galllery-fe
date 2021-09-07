@@ -4,7 +4,6 @@
 @import './src/assets/css/font-awesome.min';
 @import "assets/scss/theme_color";
 @import './src/assets/css/animate';
-@import './src/assets/css/magnific-popup';
 @import './src/assets/css/font-awesome.min';
 @import './src/assets/css/themify-icons';
 
@@ -56,4 +55,32 @@ body {
       }
     }
   }
+}
+
+.mt--500 {
+  margin-top: -500px;
+}
+
+.mt--250 {
+  margin-top: -250px;
+}
+
+.mt--220 {
+  margin-top: -220px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-230 {
+  margin-top: 230px;
+}
+
+.section-padding-100 {
+  padding: 100px 0;
+}
+
+.section-padding-0-100 {
+  padding: 0 0 100px;
 }
