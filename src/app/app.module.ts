@@ -20,6 +20,7 @@ import {ShowCaseComponent} from './component/section/show-case/show-case.compone
 import {ShowCaseQuoteComponent} from './component/section/show-case-quote/show-case-quote.component';
 import {ShowCaseContentComponent} from './component/section/show-case-content/show-case-content.component';
 import {ShowCaseArticleComponent} from './component/core/show-case-article/show-case-article.component';
+import {CallToActionComponent} from './component/section/call-to-action/call-to-action.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import {ShowCaseArticleComponent} from './component/core/show-case-article/show-
     ShowCaseQuoteComponent,
     ShowCaseContentComponent,
     ShowCaseArticleComponent,
+    CallToActionComponent,
   ],
   imports: [
     BrowserModule,
