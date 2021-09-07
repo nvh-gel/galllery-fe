@@ -1,5 +1,5 @@
 <!--Main menu-->
-<div class="mainMenu d-flex align-items-center justify-content-between {{state}}">
+<div class="mainMenu d-flex align-items-center justify-content-between {{state}}" (mouseleave)="closeMenu()">
   <!--  Close button-->
   <div class="closeIcon" (click)="closeMenu()">
     <i class="ti-close" aria-hidden="true"></i>
@@ -9,23 +9,23 @@
     <a routerLink="">Eden</a>
   </div>
   <!--  Nav-->
-  <div class="sonarNav wow fade-in-up" data-wow-delay="1s">
+  <div class="sonarNav wow fade-in-up" data-wow-delay="1s" (click)="closeMenu()">
     <nav>
       <ul>
         <li class="nav-item active">
           <a class="nav-link" routerLink="">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="">Portfolios</a>
+          <a class="nav-link" routerLink="gallery">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="">About Us</a>
+          <a class="nav-link" routerLink="about">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="">Contact</a>
+          <a class="nav-link" routerLink="contact">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="">Blog</a>
+          <a class="nav-link" routerLink="blog">Blog</a>
         </li>
       </ul>
     </nav>

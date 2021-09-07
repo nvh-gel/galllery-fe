@@ -13,6 +13,19 @@ import {PreloadComponent} from './component/core/preload/preload.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {GridComponent} from './component/section/grid/grid.component';
 import {ScrollComponent} from './component/core/scroll/scroll.component';
+import {HeroComponent} from './component/section/hero/hero.component';
+import {HeroSlideComponent} from './component/core/hero-slide/hero-slide.component';
+import {CarouselModule} from "ngx-owl-carousel-o";
+import {ShowCaseComponent} from './component/section/show-case/show-case.component';
+import {ShowCaseQuoteComponent} from './component/section/show-case-quote/show-case-quote.component';
+import {ShowCaseContentComponent} from './component/section/show-case-content/show-case-content.component';
+import {ShowCaseArticleComponent} from './component/core/show-case-article/show-case-article.component';
+import {CallToActionComponent} from './component/section/call-to-action/call-to-action.component';
+import {HomeComponent} from './page/home/home.component';
+import {ContactComponent} from './page/contact/contact.component';
+import {GalleryComponent} from './page/gallery/gallery.component';
+import {AboutComponent} from './page/about/about.component';
+import {BlogComponent} from './page/blog/blog.component';
 
 
 @NgModule({
@@ -28,10 +41,23 @@ import {ScrollComponent} from './component/core/scroll/scroll.component';
     PreloadComponent,
     GridComponent,
     ScrollComponent,
+    HeroComponent,
+    HeroSlideComponent,
+    ShowCaseComponent,
+    ShowCaseQuoteComponent,
+    ShowCaseContentComponent,
+    ShowCaseArticleComponent,
+    CallToActionComponent,
+    HomeComponent,
+    ContactComponent,
+    GalleryComponent,
+    AboutComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    CarouselModule,
     AppRoutingModule,
   ],
   providers: [],

@@ -1,0 +1,22 @@
+@import "src/assets/scss/responsive";
+
+
+.show-case-quote {
+  h2 {
+    font-size: 56px;
+    text-align: center;
+    font-weight: 100;
+
+    span {
+      font-weight: 400;
+    }
+
+    @media #{$breakpoint-md} {
+      font-size: 36px;
+    }
+
+    @media #{$breakpoint-xs} {
+      font-size: 30px;
+    }
+  }
+}

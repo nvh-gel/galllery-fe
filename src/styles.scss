@@ -1,13 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
-@import './src/assets/css/bootstrap.min';
-@import './src/assets/css/font-awesome.min';
-//@import './src/assets/scss/mixin';
-//@import './src/assets/css/animate';
-//@import './src/assets/css/owl.carousel';
-//@import './src/assets/css/magnific-popup';
-//@import './src/assets/css/font-awesome.min';
-//@import './src/assets/css/themify-icons';
+@import 'assets/css/bootstrap.min';
+@import 'assets/css/font-awesome.min';
+@import 'assets/scss/theme_color';
+@import 'assets/css/animate';
+@import 'assets/css/themify-icons';
 
 
 $font-family: 'Roboto', sans-serif;
@@ -18,6 +15,71 @@ $font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+p {
+  color: $text-color;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 100;
+}
+
 body {
   font-family: $font-family;
+
+  .owl-theme {
+    .owl-dots {
+      position: absolute;
+      left: 50px;
+      bottom: 50px;
+
+      .owl-dot {
+        width: 10px;
+        height: 10px;
+        border: 2px solid #6a6a67;
+        margin: 0 5px;
+        border-radius: 50%;
+        display: inline-block;
+
+        span {
+          display: none;
+        }
+
+        &.active {
+          border: 1px solid $color-white;
+          background-color: $color-white;
+        }
+      }
+    }
+  }
+}
+
+.mt--500 {
+  margin-top: -500px;
+}
+
+.mt--250 {
+  margin-top: -250px;
+}
+
+.mt--220 {
+  margin-top: -220px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-230 {
+  margin-top: 230px;
+}
+
+.section-padding-100 {
+  padding: 100px 0;
+}
+
+.section-padding-0-100 {
+  padding: 0 0 100px;
 }
