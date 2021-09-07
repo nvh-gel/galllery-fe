@@ -21,6 +21,11 @@ import {ShowCaseQuoteComponent} from './component/section/show-case-quote/show-c
 import {ShowCaseContentComponent} from './component/section/show-case-content/show-case-content.component';
 import {ShowCaseArticleComponent} from './component/core/show-case-article/show-case-article.component';
 import {CallToActionComponent} from './component/section/call-to-action/call-to-action.component';
+import {HomeComponent} from './page/home/home.component';
+import {ContactComponent} from './page/contact/contact.component';
+import {GalleryComponent} from './page/gallery/gallery.component';
+import {AboutComponent} from './page/about/about.component';
+import {BlogComponent} from './page/blog/blog.component';
 
 
 @NgModule({
@@ -43,6 +48,11 @@ import {CallToActionComponent} from './component/section/call-to-action/call-to-
     ShowCaseContentComponent,
     ShowCaseArticleComponent,
     CallToActionComponent,
+    HomeComponent,
+    ContactComponent,
+    GalleryComponent,
+    AboutComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
-@import './src/assets/css/bootstrap.min';
-@import './src/assets/css/font-awesome.min';
-@import "assets/scss/theme_color";
-@import './src/assets/css/animate';
-@import './src/assets/css/font-awesome.min';
-@import './src/assets/css/themify-icons';
+@import 'assets/css/bootstrap.min';
+@import 'assets/css/font-awesome.min';
+@import 'assets/scss/theme_color';
+@import 'assets/css/animate';
+@import 'assets/css/themify-icons';
 
 
 $font-family: 'Roboto', sans-serif;
