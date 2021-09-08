@@ -1,0 +1,12 @@
+/* Hero Area CSS */
+@import "src/assets/scss/theme_color";
+@import "src/assets/scss/mixin";
+
+
+.hero-area {
+  position: relative;
+  z-index: 1;
+  background-color: $bg-default;
+  overflow: hidden;
+  @include flex-wrap(wrap);
+}
