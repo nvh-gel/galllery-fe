@@ -1,11 +1,11 @@
 {
   "name": "gallery-fe",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "dev": "ng serve",
     "start": "node server.js",
-    "build": "ng build --configuration $ENV",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "heroku-postbuild": "ng build --configuration $ENV"

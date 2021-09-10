@@ -1,7 +1,6 @@
 /* Footer CSS */
 @import './src/assets/scss/theme_color';
 
-
 .footer-area {
   position: relative;
   z-index: 1;
@@ -18,11 +17,11 @@
       color: $text-color;
       font-size: 15px;
       font-weight: 300;
+      text-decoration: none;
       &:hover,
       &:focus {
         font-size: 15px;
       }
-      text-decoration: none;
     }
   }
 }

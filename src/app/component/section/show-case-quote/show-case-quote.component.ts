@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {QuoteService} from "../../../service/quote/quote.service";
 
-
 @Component({
   selector: 'app-show-case-quote',
   templateUrl: './show-case-quote.component.html',

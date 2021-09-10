@@ -2,79 +2,9 @@
 @import "src/assets/scss/responsive";
 @import "src/assets/scss/mixin";
 
-
-.max-width-360 {
-  img {
-    max-width: 360px;
-  }
-}
-
-.max-width-480 {
-  img {
-    max-width: 480px;
-  }
-}
-
-.max-width-640 {
-  img {
-    max-width: 640px;
-  }
-}
-
-.max-width-1080 {
-  img {
-    max-width: 1080px;
-  }
-}
-
 .show-case-article {
   position: relative;
   z-index: 1;
-
-  img {
-    position: relative;
-  }
-
-  .backend-content {
-    .dots {
-      position: absolute;
-      z-index: -1;
-    }
-
-    .dots-left {
-      top: -100px;
-      left: -150px;
-    }
-
-    .dots-right {
-      top: 0;
-      left: auto;
-      right: -150px;
-    }
-
-    h2 {
-      position: absolute;
-      font-size: 230px;
-      color: #f0f0f0;
-      z-index: -10;
-      top: -170px;
-
-      @media #{$breakpoint-lg} {
-        font-size: 170px;
-        top: -120px;
-      }
-
-      @media #{$breakpoint-md} {
-        font-size: 80px;
-        top: -50px;
-      }
-
-      @media #{$breakpoint-xs} {
-        font-size: 80px;
-        top: -50px;
-      }
-    }
-  }
 
   .show-case-meta {
     padding-top: 30px;
@@ -94,33 +24,6 @@
   }
 
   &.show-case-article-0-1 {
-    .backend-content {
-      .dots {
-        left: -200px;
-        @include transform(rotate(90deg));
-      }
-
-      .dots-right {
-        left: auto;
-        right: -200px;
-      }
-
-      h2 {
-        top: -180px;
-
-        @media #{$breakpoint-lg} {
-          top: -130px;
-        }
-        @media #{$breakpoint-md} {
-          top: -90px;
-          font-size: 100px;
-        }
-        @media #{$breakpoint-xs} {
-          top: -70px;
-        }
-      }
-    }
-
     @media #{$breakpoint-xs} {
       margin-bottom: 100px;
     }

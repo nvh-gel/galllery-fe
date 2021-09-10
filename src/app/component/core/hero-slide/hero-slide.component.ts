@@ -12,13 +12,9 @@ export class HeroSlideComponent implements OnInit {
   @Input() slide!: Article;
   background!: any;
 
-  constructor() {
-  }
-
   ngOnInit(): void {
     this.background = {
       'background-image': `url(${this.slide.image})`
     }
   }
-
 }

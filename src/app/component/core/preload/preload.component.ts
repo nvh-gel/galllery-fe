@@ -1,6 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {animate, state, style, transition, trigger} from "@angular/animations";
-
 
 @Component({
   selector: 'app-preload',
@@ -14,15 +13,8 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
     ]),
   ],
 })
-export class PreloadComponent implements OnInit {
-
+export class PreloadComponent {
   hidePreload: boolean = false;
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
 
   hide() {
     this.hidePreload = true;

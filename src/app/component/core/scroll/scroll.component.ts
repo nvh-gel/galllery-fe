@@ -1,6 +1,5 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {animate, state, style, transition, trigger} from "@angular/animations";
-
 
 @Component({
   selector: 'app-scroll-up',
@@ -15,19 +14,13 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
     ])
   ]
 })
-export class ScrollComponent implements OnInit {
+export class ScrollComponent {
 
   hidden: string = 'hidden';
 
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
-
   @HostListener('window:scroll', ["$event"])
   toggleScrollUp(): void {
-    this.hidden = window.pageYOffset > 100 ? 'display' : 'hidden';
+    this.hidden = window.pageYOffset > 300 ? 'display' : 'hidden';
   }
 
   scrollToTop() {

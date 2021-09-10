@@ -3,7 +3,6 @@ import {Article} from "../../../interface/article";
 import {ArticleService} from "../../../service/article/article.service";
 import {OwlOptions} from "ngx-owl-carousel-o";
 
-
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',

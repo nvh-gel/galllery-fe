@@ -1,0 +1,24 @@
+@import 'src/assets/scss/responsive';
+
+h2 {
+  position: absolute;
+  font-size: 230px;
+  color: #f0f0f0;
+  z-index: -10;
+  top: -180px;
+
+  @media #{$breakpoint-lg} {
+    font-size: 170px;
+    top: -120px;
+  }
+
+  @media #{$breakpoint-md} {
+    font-size: 80px;
+    top: -50px;
+  }
+
+  @media #{$breakpoint-xs} {
+    font-size: 80px;
+    top: -50px;
+  }
+}

@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {ArticleService} from "../../../service/article/article.service";
 import {ShowCaseData} from "../../../interface/show-case-data";
 
-
 @Component({
   selector: 'app-show-case',
   templateUrl: './show-case.component.html',
