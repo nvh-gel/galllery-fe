@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Decorator} from "../../../interface/decorator";
 
 @Component({
   selector: 'app-backend-dot',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BackendDotComponent implements OnInit {
 
-  constructor() { }
+  @Input() decorator!: Decorator | undefined;
+  dotAlign!: string;
+  dotRotate!: string;
 
   ngOnInit(): void {
+    this.dotAlign = `dots-${this.decorator?.dotsAlign === 'right' ? 'right' : 'left'}`;
+    this.dotRotate = this.decorator?.dotRotate ? 'rotate' : '';
   }
-
 }

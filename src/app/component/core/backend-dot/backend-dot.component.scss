@@ -1,0 +1,30 @@
+@import 'src/assets/scss/mixin';
+
+.dots {
+  position: absolute;
+  z-index: -1;
+
+  &.rotate {
+    @include transform(rotate(90deg));
+  }
+}
+
+.dots-left {
+  top: -100px;
+  left: -150px;
+
+  &.rotate {
+    top: 0;
+    left: -200px;
+  }
+}
+
+.dots-right {
+  top: 0;
+  left: auto;
+  right: -150px;
+
+  &.rotate {
+    right: -200px;
+  }
+}

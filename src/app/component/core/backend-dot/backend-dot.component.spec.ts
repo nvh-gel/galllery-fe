@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { BackendDotComponent } from './backend-dot.component';
+import {BackendDotComponent} from './backend-dot.component';
 
 describe('BackendDotComponent', () => {
   let component: BackendDotComponent;
@@ -8,9 +8,9 @@ describe('BackendDotComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BackendDotComponent ]
+      declarations: [BackendDotComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

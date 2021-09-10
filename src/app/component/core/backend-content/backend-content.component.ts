@@ -9,13 +9,9 @@ import {Decorator} from "../../../interface/decorator";
 export class BackendContentComponent implements OnInit {
 
   @Input() decorator!: Decorator | undefined;
-  dotAlign!: string;
   backgroundTextStyle!: {};
-  dotRotate!: string
 
   ngOnInit(): void {
-    this.dotAlign = `dots-${this.decorator?.dotsAlign === 'right' ? 'right' : 'left'}`;
-    this.dotRotate = this.decorator?.dotRotate ? 'rotate' : '';
     if (this.decorator?.text) {
       let align = this.decorator?.textAlign;
       if ('right' === align) {
