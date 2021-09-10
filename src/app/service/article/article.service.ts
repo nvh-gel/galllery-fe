@@ -102,7 +102,7 @@ export class ArticleService {
               dotsAlign: 'left',
               text: 'Quality',
               textAlign: 'left',
-              textPosition: 35
+              textPositionX: 35
             },
           },
           {
@@ -132,7 +132,7 @@ export class ArticleService {
               dotRotate: true,
               text: 'Innovation',
               textAlign: 'right',
-              textPosition: 30
+              textPositionX: 30
             },
           },
         ],
@@ -167,7 +167,7 @@ export class ArticleService {
               text: 'Passion',
               dots: true,
               textAlign: 'left',
-              textPosition: 1
+              textPositionX: 1
             },
           },
         ],
@@ -203,7 +203,7 @@ export class ArticleService {
               dotsAlign: 'right',
               text: 'Future',
               textAlign: 'right',
-              textPosition: 20
+              textPositionX: 20
             },
           }
         ],

@@ -12,13 +12,17 @@ export class BackendTextComponent implements OnInit {
   backgroundTextStyle!: {};
 
   ngOnInit(): void {
-    if (this.decorator?.text) {
-      let align = this.decorator?.textAlign;
-      if ('right' === align) {
-        this.backgroundTextStyle = {left: `${this.decorator.textPosition}%`};
-      } else {
-        this.backgroundTextStyle = {right: `${this.decorator.textPosition}%`};
-      }
+    let align = this.decorator?.textAlign;
+    let horizontal;
+    if ('right' === align) {
+      horizontal = {left: `${this.decorator?.textPositionX}%`};
+    } else {
+      horizontal = {right: `${this.decorator?.textPositionX}%`};
     }
+    let vertical = {};
+    if (this.decorator?.textPositionX) {
+      vertical = {top: `${this.decorator.textPositionY}px`};
+    }
+    this.backgroundTextStyle = Object.assign({}, horizontal, vertical);
   }
 }

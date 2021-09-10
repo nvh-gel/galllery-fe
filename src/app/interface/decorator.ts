@@ -6,5 +6,6 @@ export interface Decorator {
   dotRotate?: boolean;
   text?: string;
   textAlign?: string;
-  textPosition?: number;
+  textPositionX?: number;
+  textPositionY?: number;
 }

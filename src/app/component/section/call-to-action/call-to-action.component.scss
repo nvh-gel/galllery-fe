@@ -1,32 +1,10 @@
 /* CSS call to action */
 @import "src/assets/scss/responsive";
-@import "src/assets/scss/theme_color";
 
 .call-to-action-area {
   position: relative;
   z-index: 1;
   overflow: hidden;
-
-  .backend-content {
-    h2 {
-      position: absolute;
-      font-size: 230px;
-      color: #f0f0f0;
-      z-index: -1;
-      top: -30px;
-      left: -3%;
-
-      @media #{$breakpoint-lg} {
-        font-size: 170px;
-      }
-      @media #{$breakpoint-md} {
-        font-size: 130px;
-      }
-      @media #{$breakpoint-xs} {
-        font-size: 100px;
-      }
-    }
-  }
 }
 
 .call-to-action-content {
