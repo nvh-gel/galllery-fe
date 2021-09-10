@@ -129,6 +129,7 @@ export class ArticleService {
               marginTop: 100,
               maxWidth: 1080,
               dots: true,
+              dotRotate: true,
               text: 'Innovation',
               textAlign: 'right',
               textPosition: 30
@@ -146,7 +147,7 @@ export class ArticleService {
             title: 'Clouds in the sky',
             image: 'https://strangesounds.org/wp-content/uploads/2017/02/mammatus-clouds.jpg',
             createdAt: new Date("2020-12-01"),
-            decorator: {marginTop: -220, maxWidth: 640, dots: true, dotsAlign: 'right'},
+            decorator: {marginTop: -220, maxWidth: 640, dots: true, dotsAlign: 'right', dotRotate: true,},
           },
         ],
         style: 'justify-content-end',

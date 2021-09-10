@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Decorator} from "../../../interface/article";
+import {Decorator} from "../../../interface/decorator";
 
 @Component({
   selector: 'app-backend-content',
@@ -11,12 +11,11 @@ export class BackendContentComponent implements OnInit {
   @Input() decorator!: Decorator | undefined;
   dotAlign!: string;
   backgroundTextStyle!: {};
-
-  constructor() {
-  }
+  dotRotate!: string
 
   ngOnInit(): void {
-    this.dotAlign = `dots-${this.decorator?.dotsAlign}`;
+    this.dotAlign = `dots-${this.decorator?.dotsAlign === 'right' ? 'right' : 'left'}`;
+    this.dotRotate = this.decorator?.dotRotate ? 'rotate' : '';
     if (this.decorator?.text) {
       let align = this.decorator?.textAlign;
       if ('right' === align) {
