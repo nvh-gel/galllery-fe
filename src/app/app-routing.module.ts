@@ -6,7 +6,6 @@ import {GalleryComponent} from "./page/gallery/gallery.component";
 import {AboutComponent} from "./page/about/about.component";
 import {BlogComponent} from "./page/blog/blog.component";
 
-
 const routes: Routes = [
   {path: '', component: HomeComponent, pathMatch: 'full'},
   {path: 'gallery', component: GalleryComponent},

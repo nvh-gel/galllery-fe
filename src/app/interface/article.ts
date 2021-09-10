@@ -6,14 +6,15 @@ export interface Article {
   caption?: string;
   image: string;
   createdAt?: Date;
-  decorator?: decorator;
+  decorator?: Decorator;
 }
 
-interface decorator {
+export interface Decorator {
   marginTop?: number;
   maxWidth?: number;
   dots?: boolean;
   dotsAlign?: string;
+  dotRotate?: boolean;
   text?: string;
   textAlign?: string;
   textPosition?: number;

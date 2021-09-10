@@ -1,13 +1,5 @@
-<div class="show-case-article {{margin}} {{maxWidth}} show-case-article-{{id}}-{{total}} fadeIn">
-  <div class="backend-content">
-    <img *ngIf="article.decorator?.dots"
-         class="dots {{dotAlign}}"
-         src="assets/images/dots.png" alt="">
-    <h2 *ngIf="article.decorator?.text"
-        [ngStyle]="backgroundTextStyle">
-      {{article.decorator?.text}}
-    </h2>
-  </div>
+<div class="show-case-article {{margin}} {{maxWidth}} show-case-article-{{id}}-{{total}}">
+  <app-backend-content [decorator]="article.decorator"></app-backend-content>
   <div class="show-case-image">
     <img src="{{article.image}}" alt="">
   </div>

@@ -11,11 +11,7 @@ export class GridComponent implements OnInit {
 
   grids: Grid[] = [];
 
-  constructor() {
-  }
-
   ngOnInit(): void {
     this.grids = GRIDS;
   }
-
 }

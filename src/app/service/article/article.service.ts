@@ -2,17 +2,12 @@ import {Injectable} from '@angular/core';
 import {Article} from "../../interface/article";
 import {ShowCaseData} from "../../interface/show-case-data";
 
-
 @Injectable({
   providedIn: 'root'
 })
 export class ArticleService {
 
-  constructor() {
-  }
-
   getArticleForHeroSlides(): Article[] {
-
     return [
       {
         articleId: 1,
@@ -90,7 +85,6 @@ export class ArticleService {
   }
 
   getArticleForShowCase(): ShowCaseData[] {
-
     return [
       {
         row: 0,

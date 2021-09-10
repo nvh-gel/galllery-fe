@@ -1,0 +1,9 @@
+<div class="backend-content">
+  <img *ngIf="decorator?.dots"
+       class="dots {{dotAlign}}"
+       src="assets/images/dots.png" alt="">
+  <h2 *ngIf="decorator?.text"
+      [ngStyle]="backgroundTextStyle">
+    {{decorator?.text}}
+  </h2>
+</div>

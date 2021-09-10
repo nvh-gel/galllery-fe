@@ -2,7 +2,6 @@ import {Component, HostListener, OnInit} from '@angular/core';
 import {ScrollService} from "../../../service/scroll/scroll.service";
 import {Subscription} from "rxjs";
 
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -22,7 +21,7 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', ["$event"])
   updateSticky() {
-    let stickyState = window.pageYOffset > 50 ? 'sticky' : '';
+    let stickyState = window.pageYOffset > 100 ? 'sticky' : '';
     this.scrollService.updateScrollState(stickyState);
   }
 }

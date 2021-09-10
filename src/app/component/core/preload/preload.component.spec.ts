@@ -1,7 +1,6 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {PreloadComponent} from './preload.component';
 
-
 describe('PreloadComponent', () => {
   let component: PreloadComponent;
   let fixture: ComponentFixture<PreloadComponent>;

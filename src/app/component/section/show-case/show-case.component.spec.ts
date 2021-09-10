@@ -1,6 +1,5 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { ShowCaseComponent } from './show-case.component';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {ShowCaseComponent} from './show-case.component';
 
 describe('ShowCaseComponent', () => {
   let component: ShowCaseComponent;
@@ -8,9 +7,9 @@ describe('ShowCaseComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ShowCaseComponent ]
+      declarations: [ShowCaseComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
