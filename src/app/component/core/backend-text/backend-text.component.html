@@ -1,1 +1,4 @@
-<p>backend-text works!</p>
+<h2 *ngIf="decorator?.text"
+    [ngStyle]="backgroundTextStyle">
+  {{decorator?.text}}
+</h2>

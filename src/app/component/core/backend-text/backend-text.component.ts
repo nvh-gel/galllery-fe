@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Decorator} from "../../../interface/decorator";
 
 @Component({
   selector: 'app-backend-text',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BackendTextComponent implements OnInit {
 
-  constructor() { }
+  @Input() decorator!: Decorator | undefined;
+  backgroundTextStyle!: {};
 
   ngOnInit(): void {
+    if (this.decorator?.text) {
+      let align = this.decorator?.textAlign;
+      if ('right' === align) {
+        this.backgroundTextStyle = {left: `${this.decorator.textPosition}%`};
+      } else {
+        this.backgroundTextStyle = {right: `${this.decorator.textPosition}%`};
+      }
+    }
   }
-
 }

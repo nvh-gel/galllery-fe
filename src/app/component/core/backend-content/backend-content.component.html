@@ -1,8 +1,4 @@
 <div class="backend-content">
   <app-backend-dot [decorator]="decorator"></app-backend-dot>
-  <h2 *ngIf="decorator?.text"
-      [ngStyle]="backgroundTextStyle">
-    {{decorator?.text}}
-  </h2>
-  <app-backend-text></app-backend-text>
+  <app-backend-text [decorator]="decorator"></app-backend-text>
 </div>
