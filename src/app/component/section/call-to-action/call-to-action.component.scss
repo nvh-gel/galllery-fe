@@ -1,33 +1,10 @@
 /* CSS call to action */
 @import "src/assets/scss/responsive";
-@import "src/assets/scss/theme_color";
-
 
 .call-to-action-area {
   position: relative;
   z-index: 1;
   overflow: hidden;
-
-  .backend-content {
-    h2 {
-      position: absolute;
-      font-size: 230px;
-      color: #f0f0f0;
-      z-index: -1;
-      top: -30px;
-      left: -3%;
-
-      @media #{$breakpoint-lg} {
-        font-size: 170px;
-      }
-      @media #{$breakpoint-md} {
-        font-size: 130px;
-      }
-      @media #{$breakpoint-xs} {
-        font-size: 100px;
-      }
-    }
-  }
 }
 
 .call-to-action-content {
@@ -58,28 +35,5 @@
     @media #{$breakpoint-xs} {
       font-size: 24px;
     }
-  }
-}
-
-.sonar-btn {
-  position: relative;
-  z-index: 1;
-  min-width: 180px;
-  height: 66px;
-  border: 1px solid $heading-color;
-  text-transform: uppercase;
-  color: $heading-color;
-  font-size: 12px;
-  letter-spacing: 1px;
-  border-radius: 0;
-  line-height: 64px;
-  padding: 0;
-  background-color: $color-white;
-
-  &:hover,
-  &.focus {
-    background-color: $heading-color;
-    font-size: 12px;
-    color: $color-white;
   }
 }

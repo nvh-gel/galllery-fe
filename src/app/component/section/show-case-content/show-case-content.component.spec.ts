@@ -1,7 +1,6 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {ShowCaseContentComponent} from './show-case-content.component';
 
-
 describe('ShowCaseContentComponent', () => {
   let component: ShowCaseContentComponent;
   let fixture: ComponentFixture<ShowCaseContentComponent>;

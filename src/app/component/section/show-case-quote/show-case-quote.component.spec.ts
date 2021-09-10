@@ -1,7 +1,6 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {ShowCaseQuoteComponent} from './show-case-quote.component';
 
-
 describe('ShowCaseQuoteComponent', () => {
   let component: ShowCaseQuoteComponent;
   let fixture: ComponentFixture<ShowCaseQuoteComponent>;

@@ -2,17 +2,12 @@ import {Injectable} from '@angular/core';
 import {Article} from "../../interface/article";
 import {ShowCaseData} from "../../interface/show-case-data";
 
-
 @Injectable({
   providedIn: 'root'
 })
 export class ArticleService {
 
-  constructor() {
-  }
-
   getArticleForHeroSlides(): Article[] {
-
     return [
       {
         articleId: 1,
@@ -90,7 +85,6 @@ export class ArticleService {
   }
 
   getArticleForShowCase(): ShowCaseData[] {
-
     return [
       {
         row: 0,
@@ -108,7 +102,7 @@ export class ArticleService {
               dotsAlign: 'left',
               text: 'Quality',
               textAlign: 'left',
-              textPosition: 35
+              textPositionX: 35
             },
           },
           {
@@ -135,9 +129,10 @@ export class ArticleService {
               marginTop: 100,
               maxWidth: 1080,
               dots: true,
+              dotRotate: true,
               text: 'Innovation',
               textAlign: 'right',
-              textPosition: 30
+              textPositionX: 30
             },
           },
         ],
@@ -152,7 +147,7 @@ export class ArticleService {
             title: 'Clouds in the sky',
             image: 'https://strangesounds.org/wp-content/uploads/2017/02/mammatus-clouds.jpg',
             createdAt: new Date("2020-12-01"),
-            decorator: {marginTop: -220, maxWidth: 640, dots: true, dotsAlign: 'right'},
+            decorator: {marginTop: -220, maxWidth: 640, dots: true, dotsAlign: 'right', dotRotate: true,},
           },
         ],
         style: 'justify-content-end',
@@ -172,7 +167,7 @@ export class ArticleService {
               text: 'Passion',
               dots: true,
               textAlign: 'left',
-              textPosition: 1
+              textPositionX: 1
             },
           },
         ],
@@ -208,7 +203,7 @@ export class ArticleService {
               dotsAlign: 'right',
               text: 'Future',
               textAlign: 'right',
-              textPosition: 20
+              textPositionX: 20
             },
           }
         ],

@@ -31,6 +31,9 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/themify-icons.min.css",
+              "src/assets/css/font-awesome.min.css",
               "src/styles.scss",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css"
@@ -40,7 +43,7 @@
             ]
           },
           "configurations": {
-            "production": {
+            "prod": {
               "budgets": [
                 {
                   "type": "initial",
@@ -70,19 +73,19 @@
               "namedChunks": true
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "prod"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
-              "browserTarget": "gallery-fe:build:production"
+            "prod": {
+              "browserTarget": "gallery-fe:build:prod"
             },
-            "development": {
-              "browserTarget": "gallery-fe:build:development"
+            "dev": {
+              "browserTarget": "gallery-fe:build:dev"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "dev"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",

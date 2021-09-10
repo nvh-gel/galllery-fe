@@ -1,7 +1,6 @@
 /* CSS for preloader */
-@import './src/assets/scss/mixin';
-@import './src/assets/scss/theme_color';
-
+@import 'src/assets/scss/mixin';
+@import 'src/assets/scss/theme_color';
 
 #preloader {
   @include display-flex(flex);

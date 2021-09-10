@@ -1,7 +1,6 @@
 import {SocialLink} from "../interface/social-link";
 import {Grid} from "../interface/grid";
 
-
 export const SOCIALS: SocialLink[] = [
   {id: 'linkedin', title: 'LinkedIn', url: 'https://www.linkedin.com/in/hien-nguyen-van-389281b0/'},
   {id: 'github', title: 'Github', url: 'https://github.com/nvh-gel'},
