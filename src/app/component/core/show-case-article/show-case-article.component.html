@@ -1,6 +1,6 @@
 <div class="show-case-article {{margin}} {{maxWidth}} show-case-article-{{id}}-{{total}}">
   <app-backend-content [decorator]="article.decorator"></app-backend-content>
-  <div class="show-case-image">
+  <div class="show-case-image" (click)="openDetail()">
     <img src="{{article.image}}" alt="">
   </div>
   <div class="show-case-meta">

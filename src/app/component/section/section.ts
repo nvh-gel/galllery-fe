@@ -8,3 +8,4 @@ export {ShowCaseComponent} from './show-case/show-case.component';
 export {ShowCaseQuoteComponent} from './show-case-quote/show-case-quote.component';
 export {ShowCaseContentComponent} from './show-case-content/show-case-content.component';
 export {CallToActionComponent} from './call-to-action/call-to-action.component';
+export {ArticleDetailComponent} from './article-detail/article-detail.component';

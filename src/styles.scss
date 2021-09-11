@@ -24,6 +24,10 @@ p {
 body {
   font-family: $font-family;
 
+  &.modal-open {
+    overflow: hidden;
+  }
+
   .owl-theme {
     .owl-dots {
       position: absolute;
@@ -49,6 +53,14 @@ body {
       }
     }
   }
+}
+
+.modal-xxl {
+  max-width: 80%;
+}
+
+.closeIcon {
+  cursor: pointer;
 }
 
 .mt--500 {

@@ -4,6 +4,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CarouselModule} from "ngx-owl-carousel-o";
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import * as Core from './component/core/core';
 import * as Section from './component/section/section';
 import * as Page from './page/page';
@@ -26,6 +27,7 @@ import * as Page from './page/page';
     Section.ShowCaseQuoteComponent,
     Section.ShowCaseContentComponent,
     Section.CallToActionComponent,
+    Section.ArticleDetailComponent,
     Core.LogoComponent,
     Core.SocialLinkComponent,
     Core.MenuButtonComponent,
@@ -37,13 +39,16 @@ import * as Page from './page/page';
     Core.BackendContentComponent,
     Core.BackendDotComponent,
     Core.BackendTextComponent,
+    Core.ModalComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     CarouselModule,
     AppRoutingModule,
+    NgbModule,
   ],
+  entryComponents: [Core.ModalComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

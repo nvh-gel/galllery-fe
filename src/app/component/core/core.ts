@@ -9,3 +9,4 @@ export {ButtonComponent} from './button/button.component';
 export {BackendContentComponent} from './backend-content/backend-content.component';
 export {BackendDotComponent} from './backend-dot/backend-dot.component';
 export {BackendTextComponent} from './backend-text/backend-text.component';
+export {ModalComponent} from './modal/modal.component';
