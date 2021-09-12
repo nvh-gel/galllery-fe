@@ -1,3 +1,8 @@
 <app-modal [title]="article.title">
-  <img class="img-responsive" [src]="article.image" alt="">
+  <div class="d-flex justify-content-evenly">
+    <div class="article-photos">
+      <img [src]="article.image" alt="">
+    </div>
+    <div class="article-content">Content</div>
+  </div>
 </app-modal>

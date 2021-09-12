@@ -1,0 +1,11 @@
+@import 'src/assets/scss/theme_color';
+
+.closeIcon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.tm-bg-gray {
+  background-color: $bg-gray;
+}

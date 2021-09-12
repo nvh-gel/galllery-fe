@@ -8,6 +8,7 @@ import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 })
 export class ModalComponent {
   @Input() title!: string;
+  @Input() header!: boolean;
 
   constructor(private modalService: NgbModal) {
   }

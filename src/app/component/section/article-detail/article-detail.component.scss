@@ -1,6 +1,19 @@
+@import 'src/assets/scss/theme_color';
+
 app-modal {
-  .img-responsive {
-    max-width: 70%;
-    max-height: 80vh;
+  .article-photos {
+    width: 70%;
+    background-color: $bg-default;
+    justify-content: center;
+    display: flex;
+
+    img {
+      max-width: 100%;
+      max-height: 90vh;
+    }
+  }
+
+  .article-content {
+    width: 30%;
   }
 }

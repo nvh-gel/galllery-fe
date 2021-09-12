@@ -1,9 +1,16 @@
-<div class="modal-header">
-  <h4 class="modal-title" id="modal-basic-title">{{title}}</h4>
-  <div class="closeIcon" (click)="close()">
-    <i class="ti-close" aria-hidden="true"></i>
+<div class="modal-content rounded">
+  <div class="modal-header" *ngIf="header">
+    <h4 class="modal-title" id="modal-basic-title">{{title}}</h4>
+    <div class="closeIcon" (click)="close()">
+      <i class="ti-close" aria-hidden="true"></i>
+    </div>
   </div>
-</div>
-<div class="modal-body">
-  <ng-content></ng-content>
+  <div class="modal-body tm-bg-gray">
+    <div class="closeIcon" (click)="close()" *ngIf="!header">
+      <i class="ti-close" aria-hidden="true"></i>
+    </div>
+    <div class="row">
+      <ng-content></ng-content>
+    </div>
+  </div>
 </div>
